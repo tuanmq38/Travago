@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://kit.fontawesome.com/e54304f1e4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+     <!-- HEADER SECTION STARTS -->
+     <header>
+      <a href="#" class="logo"><span>T</span>ravago</a>
+      <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="package.html">Package</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <!-- HEADER SECTION ENDS -->
+    <section>
+      <br><br>
+    </section>
+    <section class='contact', id="contact">
+        <h1 class="heading">
+          <span>c</span>
+          <span>o</span>
+          <span>n</span>
+          <span>t</span>
+          <span>a</span>
+          <span>c</span>
+          <span>t</span>
+        </h1>
+
+        <div class="row"></div>
+        <div class="image"> <img src="../pics/travel.jpg" alt=""> </div>
+
+        <div id="formDiv">
+          <form class="myForm" onsubmit='return submit()' action='https://www.example.com/submit' method='post'>
+            <fieldset id="customer">
+              <label for="customer_name">Name* </label>
+              <input type="text" name="customer_name" id="name" required>
+          
+              <label for="phone_number">Phone* </label>
+              <input type="tel" name="phone_number" id="number" required>
+          
+              <label for="email_address">Email* </label>
+              <input type="email" name="email_address" id="email" required>
+            </fieldset>
+            <fieldset id="transport">
+              <legend>What form of transport do you prefer?</legend>
+              <label> <input id="car" type="radio"  name="transport" value="car"> Car </label>
+              <label> <input id="bus" type="radio"  name="transport" value="bus"> Bus </label>
+              <label> <input id="motorbike" type="radio"  name="transport" value="motorbike"> Motorbike</label>
+            </fieldset>
+          
+            <fieldset id="extras">
+              <legend>Do you require any extra requirement?</legend>
+              <label> <input type="checkbox" value="baby"> Baby Seat </label>
+              <label> <input type="checkbox" value="wheelchair"> Wheelchair Access </label>
+              <label> <input type="checkbox" value="map"> Map </label>
+            </fieldset>
+            
+            <fieldset id="pickup">
+              <label for="pickup_time">Pickup Date/Time</label>
+              <input type="datetime-local" name="pickup_time" id="pickup_time">
+          
+              <label for="pickup_place">Pickup Place</label>
+              <select name="pickup_place" id="pickup_place">
+                <option value="" selected="selected">Select One</option>
+                <option value="office" >Airport</option>
+                <option value="town_hall">Hotel/Homestay</option>
+                <option value="telepathy" >We'll Guess!</option>
+              </select>
+            </fieldset>
+            <fieldset id="message">
+              <label for="comments">Message</label>
+              <textarea name="comments" id="comments" maxlength="500"></textarea>
+            </fieldset>
+          
+            <button type="submit" class="btn" id="submit">get in touch</button>
+          
+          </form>
+        </div>
+        
+       <section>
+        <br>
+      </section>
+
+       <!-- FOOTER SECTION -->
+    <section class="footer">
+
+      <div class="box-container">
+  
+          <div class="box">
+              <h3>about us</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet maxime doloribus dolore voluptatem quos dicta dolorem recusandae debitis numquam dolores.</p>
+          </div>
+
+          <div class="box">
+              <h3>branch locations</h3>
+              <a href="#">Ho Chi Minh</a>
+              <a href="#">Hanoi</a>
+              <a href="#">Danang</a>
+          </div>
+          
+          <div class="box">
+              <h3>follow us</h3>
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-instagram"></a>                 
+              <a href="#" class="fa fa-twitter"></a>              
+              <a href="#" class="fa fa-youtube"></a>                       
+          </div>  
+      </div>  
+      <h1 class="credit"> Created by <span> Quintus Mai </span> | All rights reserved! </h1>
+            </section>
+</body>
+</html>
